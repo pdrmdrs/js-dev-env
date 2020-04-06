@@ -4,6 +4,7 @@
   "description": "Pluralsight JavaScript developer enviroment course",
   "main": "index.js",
   "scripts": {
+    "prestart": "node build-scripts/start-message.js",
     "start": "node build-scripts/src-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
