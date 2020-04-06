@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "localtunnel": "lt --port 3000",
-    "prestart": "node build-scripts/start-message.js",
+    "prestart": "babel-node build-scripts/start-message.js",
     "share": "npm-run-all --parallel start localtunnel",
-    "start": "node build-scripts/src-server.js",
+    "start": "babel-node build-scripts/src-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@babel/cli": "7.8.4",
     "@babel/core": "7.9.0",
+    "@babel/node": "7.8.7",
     "@babel/preset-env": "7.9.0",
     "@babel/register": "7.9.0",
     "babel-loader": "8.1.0",
